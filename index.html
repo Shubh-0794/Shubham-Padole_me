@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham D. Padole | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              arwes: {
+                bg: '#021114',
+                primary: '#26dafd',
+                secondary: '#00f8f8',
+                text: '#a1ecfb',
+                faint: 'rgba(38, 218, 253, 0.1)',
+                dark: '#0a1f24'
+              }
+            },
+            fontFamily: {
+              sans: ['"Titillium Web"', 'sans-serif'],
+              mono: ['"Source Code Pro"', 'monospace'],
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(rgba(38, 218, 253, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(38, 218, 253, 0.05) 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Titillium Web', sans-serif;
+        background-color: #021114;
+        color: #a1ecfb;
+        overflow-x: hidden;
+      }
+      
+      /* Arwes Scanline Effect */
+      .scanlines {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 50;
+        opacity: 0.6;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #021114;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #26dafd;
+        border-radius: 0;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00f8f8;
+        box-shadow: 0 0 10px #00f8f8;
+      }
+
+      /* Text Selection */
+      ::selection {
+        background: rgba(38, 218, 253, 0.3);
+        color: #fff;
+      }
+
+      /* Utility for Arwes Frame Cut Corners */
+      .clip-arwes {
+        clip-path: polygon(
+          20px 0, 100% 0, 
+          100% calc(100% - 20px), calc(100% - 20px) 100%, 
+          0 100%, 0 20px
+        );
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
