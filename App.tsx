@@ -389,9 +389,8 @@ const AppContent: React.FC = () => {
 
              <footer className="max-w-md pb-16 text-sm text-arwes-text/40 sm:pb-0 font-mono mt-24 border-t border-arwes-primary/20 pt-8">
                 <p>
-                  // SYSTEM STATUS: OPTIMAL <br/>
-                  // UI: ARWES_EMULATION_MODE_V1 <br/>
-                  Designed with <span className="text-arwes-primary">React</span> + <span className="text-arwes-primary">Tailwind</span>.
+                  
+                  Designed By <span className="text-arwes-primary">Shubham Padole</span>.
                 </p>
              </footer>
 
